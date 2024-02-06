@@ -1,0 +1,357 @@
+/* Estilo para la imagen de la mano */
+.icon-img {
+  transition: filter 0.3s ease; /* Transición suave para el cambio de color de la imagen */
+}
+
+.btn-outline-success {
+  border-radius: 50px;
+  min-height: 20px;
+  min-width: 20px;
+}
+
+/* Cambia el color de la imagen a blanco al pasar el mouse sobre el botón */
+.btn-outline-success:hover .icon-img {
+  filter: brightness(0) invert(1); /* Cambia la imagen a blanco */
+}
+
+/* Estilos para la barra de navegación */
+#navbarSupportedContent {
+  padding-left: 15%;
+}
+
+/* Estilos para el logotipo */
+.logo-img, .img-fluid {
+  transition: transform 0.3s ease; /* Transición suave al aplicar el efecto hover */
+}
+
+/* Efecto de escala al pasar el mouse sobre la imagen del logotipo */
+.logo-img:hover, .img-fluid:hover {
+  transform: scale(1.1); /* Cambia el tamaño de la imagen al hacer hover */
+}
+
+.nav-item {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container-fluid {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Estilos para los enlaces de navegación */
+.navbar-nav .nav-item .nav-link {
+  color: initial; /* Restablecer el color a su valor inicial */
+  position: relative;
+  transition: color 0.3s ease; /* Transición suave para el cambio de color */
+  font-size: 22px; /* Tamaño de letra deseado */
+}
+
+/* Estilos para los enlaces de navegación activos */
+.navbar-nav .nav-item .nav-link.active,
+.navbar-nav .nav-item .nav-link:hover {
+  color: #266F43; /* Cambia el color del texto a verde */
+}
+
+/* Estilo para el subrayado */
+.navbar-nav .nav-item .nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #266F43; /* Color del subrayado */
+  transition: width 0.3s ease; /* Transición suave para el subrayado */
+}
+
+/* Subrayado que aparece al pasar el mouse sobre el enlace */
+.navbar-nav .nav-item .nav-link:hover::before {
+  width: 100%; /* Anchura completa del subrayado */
+}
+
+.navbar.scrolled {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: rgba(240, 244, 242, 0.9);
+}
+
+#navbar {
+  transition: all .5s ease-in-out 0s;
+  background-color: rgba(240, 244, 242, 0.9);
+}
+
+#navbar.scrolled {
+  transition: all .5s ease-in-out 0s;
+}
+
+.shadow-sm {
+  box-shadow: none !important; /* No mostrar la sombra inicialmente */
+}
+
+.scrolled {
+  box-shadow: 0 1rem 1.5rem rgba(21, 21, 21, 0.25) !important; /* Mostrar la sombra al hacer scroll */
+}
+
+
+
+
+
+
+#footer {
+
+  font-size: 22px; /* Tamaño de letra deseado */
+}
+
+#top {
+  padding-top: 36px;
+  padding-bottom: 20px;
+  height: auto!important;
+  /* border-bottom: 8px solid green;
+  border-top: 8px solid green; */
+  background-color: #f0f4f2;
+}
+
+#aboutus {
+  padding-top: 66px;
+}
+
+#entrada {
+  display: flex;
+  justify-content: flex-start!important;
+}
+
+.img-fluid {
+  max-width: 75%!important;
+}
+
+.adee {
+  transition: transform 0.3s ease;
+  height: 150px;
+  width: 150px;
+}
+
+.adee:hover {
+  transform: scale(1.1); /* Cambia el tamaño de la imagen al hacer hover */
+}
+
+#redes {
+  transition: transform 0.3s ease;
+}
+
+#redes:hover {
+  transform: scale(1.1); /* Cambia el tamaño de la imagen al hacer hover */
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+  }
+}
+
+/* Tamaños de fuente responsivos */
+.title-top {
+  font-size: 2.5em; /* Tamaño de fuente grande */
+}
+
+.text-middle {
+  font-size: 1.8em; /* Tamaño de fuente mediano */
+}
+
+.date-bottom {
+  font-size: 1.5em; /* Tamaño de fuente más pequeño */
+}
+
+.title-top, .text-middle {
+  margin-bottom: 70px;
+}
+
+/* Media queries para ajustar tamaños de fuente en dispositivos más pequeños */
+@media (max-width: 768px) {
+  .title-top {
+      font-size: 2em;
+      margin-bottom: 80px;
+  }
+
+  .text-middle {
+      font-size: 1.5em;
+  }
+
+  .date-bottom {
+      font-size: 1.2em;
+  }
+}
+
+.letter1, .letter2, .letter3, .letter4 {
+  font-size: 50px;
+}
+
+.letter1 {
+  color: #266F43;
+}
+
+.letter2 {
+  color: yellow;
+}
+
+.letter3 {
+  color: red;
+}
+
+.letter4 {
+  color: red;
+}
+
+    /* CSS para efecto de hover en imágenes */
+
+.volunteer-img {
+  width: 170px;
+  height: 176px;
+  border: 5px solid transparent;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.volunteer-img:hover {
+  transform: scale(1.1); /* Aumenta el tamaño al 110% */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agrega una sombra */
+  border-color: #266F43; /* Cambia el color del borde al hacer hover */
+}
+
+/* Estilos iniciales del overlay */
+.h3-overlay {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 106%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+/* Efecto hover */
+.position-relative:hover .h3-overlay {
+  opacity: 1;
+}
+
+.h3-overlay1 {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: -86%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  
+}
+
+.letter1, .letter2, .letter3, .letter4 {
+  font-weight: 600!important; /* Puedes ajustar el valor según tu preferencia */
+}
+
+
+/* Efecto hover */
+.position-relative:hover .h3-overlay1 {
+  opacity: 1;
+}
+
+.position-relative:hover .letter1 {
+  display: block;
+}
+
+
+.team {
+  background-color: #aad6bd;
+  border-radius: 40px;
+  width: 250px;
+  height: 55px;
+}
+
+#team1 {
+  
+  display: flex;
+  align-content: space-between;    
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+#noticias {
+  border-radius: 20px;
+}
+
+.check-icon {
+  margin-right: 10px;
+  color: #266F43; /* Espacio entre el icono y el texto */
+}
+
+.achievement {
+  display: flex;
+  align-items: center; /* Alineación vertical */
+}
+
+.check-box {
+  display: inline-block;
+  border: 1px solid #266F43; /* Borde de la caja */
+  width: 30px; /* Ancho de la caja */
+  height: 30px; /* Altura de la caja */
+  border-radius: 5px; /* Borde redondeado */
+  text-align: center;
+  margin-right: 10px; /* Espacio entre la caja y el texto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  margin-bottom: auto;
+}
+
+.check-icon {
+  font-size: 18px; /* Tamaño del icono */
+}
+
+
+#galeria {
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 400px;
+}
+
+/* Estilos base para el subrayado */
+#subrayado {
+  position: relative;
+  text-decoration: none; /* Elimina el subrayado predeterminado */
+  color: white; /* Color del texto */
+}
+
+#subrayado::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0; /* Inicialmente sin ancho */
+  height: 2px;
+  background-color: white; /* Color del subrayado */
+  transition: width 0.3s ease; /* Transición suave para el subrayado */
+}
+
+/* Subrayado que aparece al pasar el mouse sobre el enlace */
+#subrayado:hover::before {
+  width: 100%; /* Ancho completo del subrayado */
+}
+
+.gallery-img {
+  transition: transform 0.3s ease; /* Transición suave para el cambio de escala */
+}
+
+/* Efecto de escala al pasar el mouse sobre gallery-img */
+.gallery-img:hover {
+  transform: scale(1.1); /* Cambia el tamaño al 110% al hacer hover */
+}
+
+
